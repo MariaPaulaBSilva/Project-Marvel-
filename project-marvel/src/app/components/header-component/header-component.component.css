@@ -1,0 +1,44 @@
+
+.header { 
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #111;
+  color: white;
+ 
+}
+
+
+.logo img {
+  height: 50px;
+  background-image: url(/src/assets/LogoMarvel.png);
+}
+
+.user-icon img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 412px) {
+.header { 
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #111;
+  color: white;
+  margin-bottom: 860px;
+}
+
+.logo img {
+  height: 40px;           
+  margin-bottom: 10px;   
+  background-image: url("/src/assets/perfil.png");  
+}
+
+.user-icon img {
+  height: 30px;           
+}
+}

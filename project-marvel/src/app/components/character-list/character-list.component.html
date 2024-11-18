@@ -1,0 +1,14 @@
+<div class="carrossel">
+  <button class="carrossel-btn" (click)="prev()">❮ Anterior</button>
+
+  <div class="cards">
+    <div *ngFor="let character of visibleCharacters" class="personagem-card" (click)="selectCharacter(character.id)">
+      <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension" 
+           alt="{{ character.name }}" 
+           class="character-img">
+      <h3>{{ character.name }}</h3>
+    </div>
+  </div>
+
+  <button class="carrossel-btn" (click)="next()">Próximo ❯</button>
+</div>

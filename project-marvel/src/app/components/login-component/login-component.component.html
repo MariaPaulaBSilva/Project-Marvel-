@@ -1,0 +1,14 @@
+<div class="card-login">
+    <h1>Login</h1>
+    <form ng-submit="login()" class="forms-login">
+        <div class="input-container">
+            <span class="icon">✉️</span>
+            <input type="text" placeholder="Digite seu email" ng-model="user.email" required>
+        </div>
+        <div class="input-container">
+            <span class="icon">🔒</span>
+            <input type="password" placeholder="Digite sua senha" ng-model="user.password" required>
+        </div>
+        <button type="submit" class="button button-entrar" (click)="onLogin()">Entrar</button>
+    </form>
+  </div>

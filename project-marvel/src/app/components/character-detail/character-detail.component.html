@@ -1,0 +1,14 @@
+<div *ngIf="characterDetails; else loading" class="character-detail-container">
+  <div class="character-detail-card">
+    <img [src]="characterDetails.thumbnail?.path + '.' + characterDetails.thumbnail?.extension" 
+         alt="{{ characterDetails.name }}" 
+         class="character-detail-img">
+    <h1>{{ characterDetails.name }}</h1>
+    <p>{{ characterDetails.description || 'Descrição não disponível.' }}</p>
+    <button class="back-btn" (click)="goBack()">Voltar</button>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p>Carregando detalhes do personagem...</p>
+</ng-template>
